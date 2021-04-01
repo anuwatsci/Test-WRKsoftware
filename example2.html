@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <title>Example 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: 15px 10px;
+        }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Style the counter cards */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+      
+        .footballmath {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 5px 10px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .item {
+            flex: 0 32%;
+            margin-top: 2%;
+            margin-bottom: 2%; /* (100-32*3)/2 */
+            text-align: center;     
+        }
+        .score {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 5px 10px;
+           
+            background-color: #2e306b;
+            color: #fff;
+            border-radius: 5px;
+            width:40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <h4>18 ม.ค. 2563</h4>
+                <h4>2020 AFC U-23 Championship</h4>
+                <div class="footballmath">
+                    <span class="item"><img src="http://fb.thaibuffer.com/r/24/h/uploads/logo/THAILAND-(U23).png" width="24">ทีมชาติไทย ยู-23 </span>
+                    <span class="item "><span class="score ">5:5</span></span>
+                    <span class="item">ทีมชาติไทย ยู-23 <img src="http://fb.thaibuffer.com/r/24/h/uploads/logo/THAILAND-(U23).png" width="24"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <h4>18 ม.ค. 2563</h4>
+                <h4>2020 AFC U-23 Championship</h4>
+                <div class="footballmath">
+                    <span class="item"><img src="http://fb.thaibuffer.com/r/24/h/uploads/logo/THAILAND-(U23).png" width="24">ทีมชาติไทย ยู-23 </span>
+                    <span class="item "><span class="score ">5:5</span></span>
+                    <span class="item">ทีมชาติไทย ยู-23 <img src="http://fb.thaibuffer.com/r/24/h/uploads/logo/THAILAND-(U23).png" width="24"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <h4>18 ม.ค. 2563</h4>
+                <h4>2020 AFC U-23 Championship</h4>
+                <div class="footballmath">
+                    <span class="item"><img src="http://fb.thaibuffer.com/r/24/h/uploads/logo/THAILAND-(U23).png" width="24">ทีมชาติไทย ยู-23 </span>
+                    <span class="item "><span class="score ">5:5</span></span>
+                    <span class="item">ทีมชาติไทย ยู-23 <img src="http://fb.thaibuffer.com/r/24/h/uploads/logo/THAILAND-(U23).png" width="24"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
